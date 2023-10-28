@@ -1,0 +1,52 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the heading horizontally */
+    text-align: center; /* Center the heading text */
+    padding: 20px; /* Add padding to the main container */
+  }
+  
+  /* Style the main heading */
+  .main-heading {
+    margin: 20px 0; /* Add margin for spacing */
+  }
+  
+  /* Default styles for the sub-container */
+  .sub-container {
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    min-height: 200px; /* Set a minimum height for the sub divs */
+    background: rgba(48, 86, 81, 0.2);
+    
+  }
+  
+  /* Default styles for the sub-content */
+  .sub-content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Default styles for the sub-image */
+  .sub-image {
+    flex: 1;
+    text-align: center;
+    
+  }
+  
+  /* Style the images to be responsive */
+  .sub-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Reverse the order for screens smaller than 768px (adjust the breakpoint as needed) */
+  @media (max-width: 768px) {
+    .sub-container {
+      flex-direction: column;
+    }
+    .sub-container.reverse {
+      flex-direction: column-reverse; /* Reverse the order of the second sub-container */
+    }
+  }

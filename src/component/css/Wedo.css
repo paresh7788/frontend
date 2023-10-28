@@ -1,0 +1,60 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-div {
+    background: rgba(48, 86, 81, 0.2);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content h2,p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image,
+.content {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    height: 300px;
+    width: 100%;
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+.animated-text {
+    animation: fade-in 1s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query for screens 768px and below */
+@media (max-width: 768px) {
+    .sub-div {
+        flex-direction: column; /* Change to a column layout for smaller screens */
+    }
+}

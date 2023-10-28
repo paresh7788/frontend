@@ -1,0 +1,30 @@
+.cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% width for each side */
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 20px;
+  }
+  
+  .company-details {
+    background: rgba(48, 86, 81, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .map {
+    background: rgba(48, 86, 81, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .company-details,
+    .map {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  }
